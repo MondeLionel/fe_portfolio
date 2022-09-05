@@ -1,0 +1,54 @@
+*{}
+
+body{
+	background-color: bisque;
+}
+p{
+	font-family: monospace;
+}
+
+li{
+	font-family: monospace;
+}
+
+.header{
+	height: 100vh;
+	color: #fff;
+	background-color: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top:1em;
+}
+
+.bg{
+	height: 60vh;
+	background-image: url('../img/monde.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.content{
+	padding: 2em;
+	background-color: cornsilk;
+	min-height: 100vh;
+}
+
+.swiper-container{
+	margin-top: 5em;
+}
+
+.heading{
+	margin-bottom: 3em;
+	position: relative;
+}
+
+.heading h2{
+	font-weight: 900;
+	font-size: 5vw;
+	
+}
+
+
+.heading .navigation{
+	position: relative;
+}
