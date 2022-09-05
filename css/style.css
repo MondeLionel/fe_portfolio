@@ -37,6 +37,15 @@ h1{
 	padding: 2em;
 	background-color: cornsilk;
 	min-height: 100vh;
+	transition: all 0.1s ease;
+
+}
+
+.content:hover{
+	/*box-shadow: -2px 0px 16px -7px #2c2b2b;*/
+	background-color: #000;
+	color: chartreuse;
+	/*transition: all 0.1s ease;*/
 }
 
 .swiper-container{
@@ -65,5 +74,9 @@ h1{
 }
 
 .terminal{
+	color: chartreuse;
+}
+
+.swiper-button-next, .swiper-button-prev{
 	color: chartreuse;
 }
