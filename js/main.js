@@ -6,9 +6,13 @@ const options = {
   slidesPerView: 1,
   spaceBetween: 10,
   breakpoints: {
-    600: {
+    900: {
       slidesPerView:3,
       spaceBetween:30
+    },
+    600: {
+      slidesPerView:2,
+      spaceBetween:20
     }
   }
 }
@@ -17,3 +21,4 @@ const options = {
 const workSwiper = new Swiper('.corporate', options);
 const projectSwiper = new Swiper('.projects', options);
 const expSwiper = new Swiper('.experiments', options);
+

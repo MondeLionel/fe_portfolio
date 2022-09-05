@@ -2,6 +2,8 @@
 
 body{
 	background-color: bisque;
+/*	height: 100vh;
+	overflow: hidden;*/
 }
 p{
 	font-family: monospace;
@@ -9,6 +11,10 @@ p{
 
 li{
 	font-family: monospace;
+}
+
+h1{
+	font-weight: 900;
 }
 
 .header{
@@ -51,4 +57,13 @@ li{
 
 .heading .navigation{
 	position: relative;
+}
+
+.wrapper{
+	/*height: 100vh;*/
+/*	overflow: hidden;*/
+}
+
+.terminal{
+	color: chartreuse;
 }
