@@ -7,19 +7,34 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
-
+	<style>
+		.loader{
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			background-color: #000;
+			z-index: 2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+		}
+	</style>
 </head>
 <body>
+	<div class="loader">
+		<p>loading</p>
+	</div>
 	<div class="wrapper">
 	<div class="header">
 		<div class="container">
 			<h1 data-scroll data-scroll-speed="3">Curated Porfolio for Conversation Labs</h1>
 			<p>by Monde Nyawose</p>
-			<h2>frontend developer</h2>
 			<p class="terminal"><b>Tooling > </b> terminal, Sublime Text, Browser, Windows 10 Pro</p>
 		</div>
 		<div class="bg">
-			
+			<div class="bgCover"></div>
+			<img src="img/monde_header.jpg" alt="" class="img-fluid">
 		</div>
 	</div>
 	<div class="main">
@@ -245,6 +260,7 @@
 	</footer>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/swiper.min.js"></script>
+	<script src="js/anime.min.js"></script>
 	<script src="js/locomotive-scroll.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
