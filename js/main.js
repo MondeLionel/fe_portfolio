@@ -1,7 +1,6 @@
-
-window.onload = function(){
-  animateLoad()
-}
+window.addEventListener('load', function(){
+   animateLoad()
+})
 
 
 const options = {
@@ -28,6 +27,20 @@ const workSwiper = new Swiper('.corporate', options);
 const projectSwiper = new Swiper('.projects', options);
 const expSwiper = new Swiper('.experiments', options);
 
+// circularize
+// const rtext = document.getElementById("rText");
+// const ct = new CircleType(rtext)
+
+
+// detect scroll
+ScrollOut({
+  cssProps: {
+    viewportY: true,
+    visibleY: true
+  }
+});
+
+
 function animateLoad(){
 
   const heading = document.querySelector('.header h1')
@@ -35,19 +48,50 @@ function animateLoad(){
   const bgImg = document.querySelector('.bg img')
   const cover = document.querySelector('.bgCover')
   const loader = document.querySelector('.loader')
+  const counter = document.querySelector('.count')
+  const ball = document.querySelector('.ball')
+  const rotatercuff = document.querySelector('.rotateText')
+
   const initAnimations = {
     duration:500,
     easing:'linear',
 
   }
+  // MSDV - mass, stiffness, damping, velocity
+  const elasticEasing = 'spring(1,0.8,0.1,0.1)'
   const loadTL = anime.timeline(initAnimations)
 
   loadTL
   .add({
+    targets: counter,
+    innerHTML: [0, 100],
+    easing: 'linear',
+    round: 10
+  })
+  .add({
+    targets:ball,
+      keyframes: [
+      {translateY: 0},
+    {translateY: -40},
+    {translateY: 0},
+    {translateY: -30},
+    {translateY: 0},
+    {translateY: -20},
+    {translateY: 0},
+    {translateY: -10},
+    {translateY: 0},
+   
+
+  ],
+  duration: 1000,
+  easing: 'easeInOutQuad',
+  loop: true
+  })
+  .add({
     targets:loader,
     // translateX:['0','100%'],
     opacity:[1,0],
-    duration:1000,
+    duration:400,
     delay:1000
   })
     .add({
@@ -70,6 +114,11 @@ function animateLoad(){
     delay:100,
     opacity:[0,1],
     translateY:['10px','0px']
+  })
+  .add({
+    targets: rotatercuff,
+    easing: 'easeInOutQuad',
+    translateX:['100%','0%']
   })
 
  

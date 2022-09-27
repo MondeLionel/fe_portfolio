@@ -1,22 +1,99 @@
 *{}
 
 body{
-	background-color: bisque;
-/*	height: 100vh;
-	overflow: hidden;*/
+	background-color: black;
+	font-family: 'Heebo', sans-serif;
+	color: #fff;
 }
 p{
-	font-family: monospace;
 }
 
 li{
-	font-family: monospace;
 }
+a{
+	color: chartreuse;
 
+}
 h1{
 	font-weight: 900;
 }
+.links{
+	display: flex;
+	margin: 5em auto;
+	/*flex-wrap: wrap;*/
+	
+}
 
+
+
+
+.links a{
+	font-size: 2em;
+	text-decoration: none;
+	color: inherit;
+	background-color: #3737376e;
+	padding: 15px;
+	min-width: 200px;
+	width: 300px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	height: 300px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+}
+
+.showcase h2{
+	font-weight: bold;
+	position: absolute;
+
+}
+.showcase span{
+	margin-top: auto;
+	opacity: 0;
+	font-size: 1rem;
+
+}
+.showcase:hover{
+	background-color: #aaa;
+	color: #000;
+}
+
+.showcase:nth-child(1):hover{
+	background-image: url('../img/screenshots/burke.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.showcase:nth-child(2):hover{
+	background-image: url('../img/screenshots/mjs.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.showcase:nth-child(3):hover{
+	background-image: url('../img/screenshots/fundamentum.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.showcase:nth-child(4):hover{
+	background-image: url('../img/screenshots/pst.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.showcase:hover h2{
+	opacity: 0;
+}
+
+.showcase:hover span{
+	opacity: 1;
+}
+
+.link .showcase{
+	padding: 1em
+}
 .header{
 	height: 100vh;
 	color: #fff;
@@ -37,6 +114,7 @@ h1{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	mix-blend-mode: luminosity;
 }
 
 
@@ -50,17 +128,13 @@ h1{
 }
 .content{
 	padding: 2em;
-	background-color: cornsilk;
-	min-height: 100vh;
-	transition: all 0.1s ease;
+	color: #fff;
 
 }
 
 .content:hover{
-	/*box-shadow: -2px 0px 16px -7px #2c2b2b;*/
-	background-color: #000;
-	color: chartreuse;
-	/*transition: all 0.1s ease;*/
+	color: #eee;
+	transition: all 0.1s ease;
 }
 
 .swiper-container{
@@ -84,8 +158,7 @@ h1{
 }
 
 .wrapper{
-	/*height: 100vh;*/
-/*	overflow: hidden;*/
+	position: relative;
 }
 
 .terminal{
@@ -94,4 +167,86 @@ h1{
 
 .swiper-button-next, .swiper-button-prev{
 	color: chartreuse;
+}
+
+.rotateText{
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	z-index: 20;
+	width: 30%;
+	height: auto;
+	
+}
+
+.rotateText:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+[data-scroll-dir-y="1"] .rotateText h2{
+	animation: rotater 10s linear infinite;
+}
+
+[data-scroll-dir-y="-1"] .rotateText h2{
+	animation: rotater 10s linear infinite reverse;
+}
+
+[data-scroll="out"]{
+	opacity: 0.3;
+	transition: opacity 0.5s; 
+}
+
+/*scrolling down*/
+
+[data-scroll-dir-y="1"] [data-scroll="in"]{
+	opacity: 1;
+	transition: opacity 0.5s;
+
+}
+
+/*scrolling up*/
+
+[data-scroll-dir-y="-1"] [data-scroll="in"]{
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+.contact{
+	padding: 1em 0;
+}
+
+.contact a{
+	font-family: monospace;
+}
+
+
+.gong{
+	margin: 5em auto;
+}
+
+
+.bg_vid{
+	overflow: hidden;
+	width: 100%;
+}
+
+.collab{
+	margin: 3em auto;
+}
+
+video{
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	height: 50vh;
+}
+
+@keyframes rotater{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
 }

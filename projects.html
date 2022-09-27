@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Monde's Portfolio for Conversation Labs</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.loader{
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			background-color: #000;
+			z-index: 2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+		}
+
+		.count{
+			position: absolute;
+			font-size: 8vw;
+			color: #fff;
+		}
+
+		.ball{
+			width: 50px;
+			height: 50px;
+			background-color: chartreuse;
+			border-radius: 100px;
+		}
+	</style>
+</head>
+<body class="loading">
+	<div class="loader">
+		
+		<p class="ball"></p>
+		<br>
+		<p>loading</p>
+		<!-- <div class="count"></div> -->
+	</div>
+
+	<div class="wrapper">
+
+	<div class="rotateText">
+		<h2 id="rText">arsenal football club</h2>
+	</div>
+	<div class="header">
+		<div class="container">
+			<h1 data-scroll data-scroll-speed="3">Curated Porfolio for Conversation Labs</h1>
+			<p>by Monde Nyawose</p>
+			<p class="terminal"><b>Tooling > </b> terminal, Sublime Text, Browser, Windows 10 Pro</p>
+		</div>
+		<div class="bg">
+			<div class="bgCover"></div>
+			<img src="img/monde_header.png" alt="" class="img-fluid">
+		</div>
+	</div>
+	<div class="main">
+		<!-- corporate -->
+		
+		<div class="swiper-container corporate">
+
+			<div class="heading container">
+				<h2>Corporate</h2>
+					<p><i>Swiper left or right</i></p>
+			</div>
+			<div class="swiper-wrapper" data-scroll>
+				<div class="swiper-slide">
+					<img src="img/screenshots/fundamentum.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Fundamentum</h3>
+						<a href="http://www.fundamentum.co.za/" target="_blank" class="btn btn-dark mt-3 mb-3">Website</a>
+						<p>Fundamentum is a local commercial property management firm. Their website required a large overhaul into a modern, cutting edge digital experience.</p>
+						<p><b>Technical Challenge</b>: High level UI development, UX, extensive UI testing, microanimations, performance testing with postlight, SEO, Content management, async request handling, HTML Emails</p>
+						<p><b>Role:</b> Front-end Developement</p>
+						<p><b>Stack</b>: Laravel, HTML/php, Bootstrap, JS, CSS</p>
+						
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/screenshots/burke.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Burke Lubricants</h3>
+						<a href="https://www.oil.ie/" target="_blank" class="btn btn-dark mt-3 mb-3">Website</a>
+						<p>BURKE Lubricants is a UK based distributor of industrial and commercial/retail lubricant products. The website needed to inform their customers of their products and as such needed a way for the company to update handbooks, downloadable files, and industry news.</p>
+						<p><b>Technical challenge:</b> High level UI implementation, animations, page-load and general browser performance testing, Content Management of many downloadable files and written content, Search Engine optimization, client training </p>
+						<p><b>Role:</b> Front-end Developement</p>
+						<p><b>Stack</b>: Headless Wordpress, Laravel Backend, HTML, Bootstrap, JS/Jquery, CSS, webpack, git/gitlab</p>
+					
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/screenshots/buckman.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Buckman</h3>
+						<a href="https://www.buckman.com/" target="_blank" class="btn btn-dark mt-3 mb-3">Website</a>
+						<p>Buckman is an international chemical company with offices in South Africa. </p>
+						<p><b>Technical Challenge</b>: Content management, Image editing, custom Javascript, animations, Internal tooling</p>
+						<p><b>Role: </b>UI Developer/Maintenance</p>
+						<p><b>Stack: </b> Umbraco 8, C#, Javascript, CSS</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/screenshots/trellidor.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Trellidor</h3>
+						<a href="https://www.trellidor.com/" target="_blank" class="btn btn-dark mt-3 mb-3">Website</a>
+						<p>Trellidor is a UK based commercial and retail security product manufacturer. From micro-animations to Information architecture to internal systems for sales agents and even educational platform for retail and commercial customers.</p>
+						<p><b>Technical Challenge</b>: High level UI development, extensive testing, microanimations, performance testing enhancements, SEO, mobile first development, Information Architecture, version contro, Emails, internal web-based tooling</p>
+						<p><b>Role: </b>Front-end Developer</p>
+						<p><b>Stack: </b>Wordpress API, Laravel, Javascript, Vuejs, parceljs, CSS, git/gitlab</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<img src="img/screenshots/pst.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Phoenix Settlement Trust</h3>
+						<a href="https://www.phoenixsettlement.co.za/" target="_blank" class="btn btn-dark mt-3 mb-3">Website</a>
+						<p>PST is an NPO based in Durban whose role is to safeguard and promote Mahatma Gandhi's teachings and Legacy.</p>
+						<p><b>Technical challenge:</b> Required to work offline so we used a JSON File and usage of session and localstorage in the browser to prevent slow load-times. Improved page load by almost 100% but not very reliable as JSON may not fully download on poor connections. fall back to normal <i>Fetch</i> aysnc requests.</p>
+						<p><b>Role:</b> Full-stack Developement</p>
+						<p><b>Stack</b>: Headless Wordpress, HTML, Bootstrap, AlpineJS, Parceljs, CSS, GIT/GITHUB</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/screenshots/clarendon.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Clarendon</h3>
+						<a href="http://www.clarendonschools.co.za/" target="_blank" class="btn btn-dark mt-3 mb-3">Website</a>
+						<p>Clarendon school for girls is a Durban based educational institution. Required a new website to help with both informing or showcasing the schools activities and as a sales touchpoint.</p>
+						<p><b>Technical challenge:</b> Information architecture & semantic HTML structure, micro-animations, High level UI implementation, SEO, Performace optimization & testing because of high image content usage.</p>
+						<p><b>Role:</b> Front-end Developer</p>
+						<p><b>Stack</b>: Headless Wordpress, Laravel, HTML, Bootstrap, CSS, GIT/GITHUB, Apache Server</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/screenshots/kaplan.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Arthur Kaplan</h3>
+						<a href="https://www.arthurkaplan.co.za/" target="_blank" class="btn btn-dark mt-3 mb-3">Website</a>
+						<p>Luxury Brands national retailer needed full e-commerce functionality including backend delivery tracking, product update/variations, sales & specials.</p>
+
+						<p><b>Technical challenge:</b> Analytics, UI development, SEO, product upload automation, marketing emails</p>
+						<p><b>Role:</b> Front-end Developer</p>
+						<p><b>Stack</b>: Wordpress, Woocommerce, HTML emails</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/screenshots/spar.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>2019 SPAR WIN A CAR</h3>
+						<a href="https://sparwinacar.co.za/" target="_blank" class="btn btn-dark mt-3 mb-3">Website</a>
+						<p>Spar win a car microsite for national retailer runnng their annual competition.</p>
+						<p><b>Technical challenge:</b> Game-based UI, Product placement, Cross-browser compatibility, performance testing, Analytics</p>
+						<p><b>Role:</b> Front-end Developer</p>
+						<p><b>Stack</b>: Vuejs, laravel, HTML, Bootstrap, JS, CSS, git/gitlab</p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-prev"></div>
+  			<div class="swiper-button-next"></div>
+		</div>
+
+		<!-- Projects -->
+
+		<div class="swiper-container projects">
+			<div class="heading container">
+				<h2>Projects</h2>
+			</div>
+			<div class="swiper-wrapper" data-scroll>
+
+				<div class="swiper-slide">
+					<img src="img/screenshots/feels.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Finding Feels</h3>
+						<div class="btns mb-3 mt-3">
+							<a href="https://feelsfire.netlify.app/" class="btn btn-dark mt-3 mb-3" target="_blank">Website</a>
+						</div>
+						<p>Finding Feels is a lifestyle event based in Durban. It attracts a few thousand people per event.</p>
+						<p><b>Technical Challenge</b> required a microwebsite to further cement their brand as an "off-center" event, and some simple functional details with images/videos and a form for subscribers to get updates onthe next event. We also had to design emails with Mailchimp.</p>
+					
+						<p><b>Role:</b> UI developer</p>
+						<p><b>Stack</b>: HTML, JS, CSS<, Netlify</p>
+			
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/screenshots/mjs.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>MJ Summers</h3>
+						<div class="btns mb-3 mt-3">
+							<a href="https://mjsummers.netlify.app/" class="btn btn-dark mt-3 mb-3" target="_blank">Website</a>
+						</div>
+						<p>MJ Summers is a Durban based musician.</p>
+						<p><b>Technical Challenge:</b> requires access to videos, music and images that are part of her greater digital strategy. The website is built using modern standards, complete with <i>Glassmorphism</i> effect, mix-blending, vertical writing-modes, modals, gradients.</p>
+						<p><b>Role:</b> UI Developement</p>
+						<p><b>Stack</b>: HTML, JS, CSS, Alpinejs, Netlify</p>	
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/screenshots/mondewebsite.png" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Personal Website</h3>
+						<div class="btns mb-3 mt-3">
+							<a href="https://pure-escarpment-33677.herokuapp.com/" class="btn btn-dark mt-3 mb-3" target="_blank">Website</a>
+						</div>
+						<p>My personal 'not-up-to-date' Website with funky animations</p>
+						<p><b>Technical Challenge:</b> animations, custom CMS, web app deployment</p>
+						<p><b>Role:</b>Full stack</p>
+						<p><b>Stack</b>: Python, Flask, HTML, JS, CSS, Heroku</p>	
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-prev"></div>
+  			<div class="swiper-button-next"></div>
+		</div>
+
+		<!-- Experiments -->
+
+		<div class="swiper-container experiments">
+			<div class="heading container">
+				<h2>Fun and experiments</h2>
+			</div>
+			<div class="swiper-button-prev"></div>
+  			<div class="swiper-button-next"></div>
+			<div class="swiper-wrapper" data-scroll>
+				<div class="swiper-slide">
+					<img src="img/screenshots/bhungi.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Bhungizwe the First</h3>
+						<div class="btns mb-3 mt-3">
+							<a href="https://bhungi.netlify.app/" class="btn btn-dark mt-3 mb-3" target="_blank">Website</a>
+						</div>
+						<p>Bhungizwe is a pre-production television series written by Sandile Majola. Originally a web comic, the writer/producer needed a website to sell the idea to various studios and potential stakeholders to turn it into a series with international appeal.</p>
+						<p><b>Technical Challenge:</b> High level UI implementation, Animations, Web audio API, information architecture, Browser compatibility testing</p>
+						<p><b>Role:</b> Fullstack Developer</p>
+						<p><b>Stack</b>: HTML, JS, CSS, Alpinejs, Netlify</p>
+						<p>Work in progress.</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/screenshots/story.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>Audio Visual website</h3>
+						<div class="btns mb-3 mt-3">
+							<a href="https://storiedbook.netlify.app/" class="btn btn-dark mt-3 mb-3" target="_blank">Website</a>
+						</div>
+						
+						<p>Story book is an experiment for a comic book artist where the frames(screenshots in the example) are used as a storybook with js driven sound effects. The idea was to save data by using MP3/OPUS codec to optimize for size/quality ratio rather than using low quality video. Data costs are also limiting factor. Audio is cheaper to store than video.  </p>
+						<p><b>Technical Challenge:</b>UI implementation, Animations, web audio API, analytics, data-saving </p>
+						<p><b>Role:</b> UI Developer</p>
+						<p><b>Stack</b>: HTML, JS, CSS, Swiperjs, Netlify</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/screenshots/gong.jpg" alt="" class="img-fluid">
+					<div class="content">
+						<h3>GONGONG Hackathon</h3>
+						<div class="btns mb-3 mt-3">
+							<a href="https://clever-turing-41b130.netlify.app/" class="btn btn-dark mt-3 mb-3" target="_blank">Website</a>
+						</div>
+						
+						<p>Award winning hackathon project at Kwande Festival focused on building platform for Local series</p>
+						<p><b>Technical Challenge:</b> High level UI implementation, Video transmux and optimization, Data organization, Information architecture </p>
+						<p><b>Role:</b> Fullstack Developer</p>
+						<p><b>Stack</b>: HTML, JS, CSS, Nginx, FFMPEG</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<footer class="mt-5 px-5 text-align-center">
+		<p>&copy; 2022, Monde Nyawose. Supporter of Arsenal Football Club.<span><img src="img/arsenal.svg" alt="" class="img-fluid" width="30"></span></p>
+	</footer>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script src="js/locomotive-scroll.min.js"></script>
+	<script src="js/scroll-out.min.js"></script>
+	<script src="js/circletype.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

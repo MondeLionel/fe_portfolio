@@ -1,0 +1,99 @@
+*{}
+body{
+	background-color: #000;
+}
+
+p{
+	font-family: sans-serif;
+}
+
+.wrapper{
+
+}
+
+
+.searchBar{
+	text-align: center;
+	color: #fff;
+}
+
+.searchBar h1,h2,h3{
+		font-weight: 100;
+}
+
+.inputWrapper{
+	margin: 2em auto;
+}
+
+.inputWrapper input{
+	border-radius: 0;
+	background-color: #000;
+	border: 2.5px solid #222;
+	width: 25vw;
+	color: #eee;
+	padding: 5px 15px;
+}
+
+.iconwrapper{
+	width: 100%;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+
+	/*! height: 50vh; */
+	/*! flex-wrap: wrap; */
+}
+
+.iconwrapper span{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	background-color: #222;
+	box-shadow: 1px 1px 100px 100px #333;
+	z-index: -1;
+}
+
+.sIcon{
+	color: #eee;
+	width: 20vw;
+	min-width: 280px;
+	padding: 10px 1em;
+	display: flex;
+	background-color: #000;
+	outline: 5px solid transparent;
+	margin: 2px;
+	overflow: hidden;
+	position: relative;
+	height: 15vh;
+}
+
+.sIcon svg{
+	fill: #073ea2;
+	margin-right: 1em;
+}
+
+.sIcon:hover{
+	cursor: default;
+	backdrop-filter: blur(4px);
+	outline: 5px solid #fffcfc26;
+	background-color: #181818b3;
+}
+
+.sIcon h4{
+	font-size: 1em;
+}
+
+.sIcon p{
+	font-size: 0.8rem;
+	color: gray;
+}
+
+.transline{
+	width: 100%;
+	outline: 2px solid rgba(235, 235, 235, 0.03);
+
+}
+
+.iconContent{
+	
+}
