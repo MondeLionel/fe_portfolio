@@ -108,6 +108,10 @@ function animateLoad(){
     targets:cover,
     translateY:['0%','-100%'],
     duration:300
+    
+  })
+  .add({
+    opacity:[1,0]
   })
   .add({
     targets:bgImg,

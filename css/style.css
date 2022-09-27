@@ -122,6 +122,10 @@ body.loading{
 	height: 60vh;
 	overflow: hidden;
 	position: relative;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .bg img{
@@ -130,7 +134,10 @@ body.loading{
 	object-fit: cover;
 	mix-blend-mode: luminosity;
 }
-
+.bg h1{
+	position: absolute;
+	z-index: 100;
+}
 
 .bgCover{
 	height: 100%;
@@ -251,6 +258,10 @@ body.loading{
 
 .collab{
 	margin: 3em auto;
+}
+
+.cn{
+	font-family: 'Noto Sans SC', sans-serif;
 }
 
 video{
