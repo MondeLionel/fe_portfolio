@@ -76,6 +76,10 @@ function animateLoad(){
   })
   .add({
     targets:ball,
+    scale:[100,1]
+  })
+  .add({
+    targets:ball,
       keyframes: [
       {translateY: 0},
     {translateY: -40},

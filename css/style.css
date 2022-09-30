@@ -5,6 +5,10 @@ body{
 	font-family: 'Heebo', sans-serif;
 	color: #fff;
 }
+
+svg{
+
+}
 p{
 }
 
@@ -17,17 +21,34 @@ a{
 h1{
 	font-weight: 900;
 }
+
 .links{
 	display: flex;
 	margin: 5em auto;
-	/*flex-wrap: wrap;*/
-	
+}
+
+svg{
+	width:inherit;
+}
+
+.icon{
+	border-radius: 3px;
+	padding:0 5px;
+	width:2rem;
+	color: #000;
+	text-decoration: none;
+	background-color: antiquewhite;
+	height: 50px;
+}
+
+.icon span{
+	background-color: #fff;
+	padding: 3px
 }
 
 body.loading{
 	overflow: hidden;
 }
-
 
 .links a{
 	font-size: 2em;
@@ -67,7 +88,6 @@ body.loading{
 	background-repeat: no-repeat;
 	background-position: center;
 	transition: all 0.2s ease;
-
 }
 
 .showcase:hover::after{
@@ -201,39 +221,6 @@ body.loading{
 	width: 30%;
 	height: auto;
 	
-}
-
-.rotateText:hover{
-	opacity: 0.5;
-	cursor: pointer;
-}
-
-[data-scroll-dir-y="1"] .rotateText h2{
-	animation: rotater 10s linear infinite;
-}
-
-[data-scroll-dir-y="-1"] .rotateText h2{
-	animation: rotater 10s linear infinite reverse;
-}
-
-[data-scroll="out"]{
-	opacity: 0.3;
-	transition: opacity 0.5s; 
-}
-
-/*scrolling down*/
-
-[data-scroll-dir-y="1"] [data-scroll="in"]{
-	opacity: 1;
-	transition: opacity 0.5s;
-
-}
-
-/*scrolling up*/
-
-[data-scroll-dir-y="-1"] [data-scroll="in"]{
-	opacity: 1;
-	transition: opacity 0.5s;
 }
 
 .contact{
