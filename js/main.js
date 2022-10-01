@@ -76,22 +76,21 @@ function animateLoad(){
   })
   .add({
     targets:ball,
-    scale:[100,1]
+    scale:[100,1],
+    duration:500
   })
   .add({
     targets:ball,
       keyframes: [
       {translateY: 0},
-    {translateY: -40},
-    {translateY: 0},
-    {translateY: -30},
-    {translateY: 0},
-    {translateY: -20},
-    {translateY: 0},
-    {translateY: -10},
-    {translateY: 0},
-   
-
+      {translateY: -40},
+      {translateY: 0},
+      {translateY: -30},
+      {translateY: 0},
+      {translateY: -20},
+      {translateY: 0},
+      {translateY: -10},
+      {translateY: 0}
   ],
   duration: 1000,
   easing: 'easeInOutQuad',
@@ -99,7 +98,6 @@ function animateLoad(){
   })
   .add({
     targets:loader,
-    // translateX:['0','100%'],
     opacity:[1,0],
     duration:400,
     delay:1000

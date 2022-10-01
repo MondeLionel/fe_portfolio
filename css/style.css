@@ -18,6 +18,11 @@ a{
 	color: chartreuse;
 
 }
+
+a:hover{
+	color: chartreuse;
+}
+
 h1{
 	font-weight: 900;
 }
@@ -33,7 +38,7 @@ svg{
 
 .icon{
 	border-radius: 3px;
-	padding:0 5px;
+	padding:5px;
 	width:2rem;
 	color: #000;
 	text-decoration: none;
@@ -41,8 +46,18 @@ svg{
 	height: 50px;
 }
 
+
+.icon:hover{
+	background-color: #171717;
+	outline: 1px solid #111;
+}
+
+.icon:hover svg{
+	fill: bisque;
+}
+
 .icon span{
-	background-color: #fff;
+	/*background-color: #fff;*/
 	padding: 3px
 }
 
