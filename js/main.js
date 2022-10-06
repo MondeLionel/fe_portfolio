@@ -56,6 +56,7 @@ function animateLoad(){
   const loader = document.querySelector('.loader')
   const counter = document.querySelector('.count')
   const ball = document.querySelector('.ball')
+  const codes = document.querySelector('.codes')
   const rotatercuff = document.querySelector('.rotateText')
 
   const initAnimations = {
@@ -128,9 +129,10 @@ function animateLoad(){
     translateY:['10px','0px']
   })
   .add({
-    targets: rotatercuff,
-    easing: 'easeInOutQuad',
-    translateX:['100%','0%']
+    targets: codes,
+    delay:100,
+    opacity:[0,1],
+    translateY:['10px','0px']
   })
 
  

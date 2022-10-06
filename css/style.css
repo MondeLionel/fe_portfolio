@@ -144,13 +144,13 @@ body.loading{
 	padding: 1em
 }
 .header{
-	height: 100vh;
+	/*! height: 100vh; */
 	color: #fff;
 	background-color: #000;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding-top:1em;
+	padding-top:5em;
 }
 
 .bg{
@@ -273,11 +273,35 @@ video{
 	height: 50vh;
 }
 
+
+
 @keyframes rotater{
 	0%{
 		transform: rotate(0deg);
 	}
 	100%{
 		transform: rotate(360deg);
+	}
+}
+
+
+@media only screen and (max-width:500px){
+	*{}
+	body{
+		background-color: #000;
+	}
+	
+	.links{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.links .showcase{
+		width: 100%;
+		height: 100px;
+		border-radius: 0;
+		margin: 0;
+		margin-bottom: 10px;
 	}
 }
