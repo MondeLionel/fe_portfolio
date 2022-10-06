@@ -28,9 +28,7 @@ h1{
 }
 
 .links{
-	display: flex;
-	margin: 5em auto;
-	flex-wrap: wrap;
+	
 }
 
 svg{
@@ -71,21 +69,10 @@ body.loading{
 	text-decoration: none;
 	color: inherit;
 	background-color: #3737376e;
-	padding: 15px;
-	min-width: 200px;
-	width: 300px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	height: 300px;
-	border-radius: 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-
-
-	margin: 0 auto;
-	margin-bottom: 1em;
+	width: 100%;
+	
+	display: block;
+	padding: 1em;
 }
 
 .showcase h2{
@@ -99,53 +86,9 @@ body.loading{
 	font-size: 1rem;
 
 }
-.showcase:hover{
-	background-color: #aaa;
-	color: #fff;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	transition: all 0.2s ease;
-}
 
-.showcase:hover::after{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	background: linear-gradient(0deg, black, transparent);
-	width: 100%;
-	height: 100%;
-}
 
-.showcase:nth-child(1):hover{
-	background-image: url('../img/screenshots/burke.jpg');
-}
-.showcase:nth-child(2):hover{
-	background-image: url('../img/screenshots/mjs.jpg');
-}
-.showcase:nth-child(3):hover{
-	background-image: url('../img/screenshots/fundamentum.jpg');
-}
-.showcase:nth-child(4):hover{
-	background-image: url('../img/screenshots/pst.jpg');
-}
 
-.showcase:hover h2{
-	opacity: 0;
-	transition: all 0.2s ease;
-}
-
-.showcase:hover span{
-	opacity: 1;
-	color: #fff;
-	z-index: 1;
-	transition: all 0.2s ease;
-}
-
-.link .showcase{
-	padding: 1em
-}
 .header{
 	/*! height: 100vh; */
 	color: #fff;

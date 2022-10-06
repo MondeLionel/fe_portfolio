@@ -81,26 +81,34 @@
 
 		</div>
 
-		<div class="links">
-
-				<a href="https://www.oil.ie/" target="_blank" class="showcase">
-					<h2>Burke Lubricants</h2>
-					<span class="title">Burke Lubricants</span>
-
-				</a>
-				<a href="https://mjsummers.netlify.app/" class="showcase">
-					<h2>MJ Summers</h2>
-					<span class="title">MJ Summers</span>
-				</a>
-				<a href="http://www.fundamentum.co.za/" target="_blank" class="showcase">
-					<h2>Fundamentum</h2>
-					<span class="title">Fundamentum</span>
-				</a>
-				<a href="https://www.phoenixsettlement.co.za/" target="_blank" class="showcase">
-					<h2>Phoenix Settlement Trust</h2>
-					<span class="title">Phoenix Settlement Trust</span>
-				</a>
-
+		<div class="swiper-container links">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="https://www.oil.ie/" target="_blank" class="showcase">
+						<h2>Burke Lubricants</h2>
+						<span class="title">Burke Lubricants</span>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="https://mjsummers.netlify.app/" class="showcase">
+						<h2>MJ Summers</h2>
+						<span class="title">MJ Summers</span>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="http://www.fundamentum.co.za/" target="_blank" class="showcase">
+						<h2>Fundamentum</h2>
+						<span class="title">Fundamentum</span>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="https://www.phoenixsettlement.co.za/" target="_blank" class="showcase">
+						<h2>Phoenix Settlement Trust</h2>
+						<span class="title">Phoenix Settlement Trust</span>
+					</a>
+				</div>
+				
+			</div>
 		</div>
 		
 	</div>
@@ -191,6 +199,22 @@
 	<script src="js/scroll-out.min.js"></script>
 	<script src="js/circletype.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		const linkSwiper = new Swiper('.swiper-container.links',{
+			slidesPerView:3,
+			spaceBetween: 10,
+			breakpoints: {
+				900: {
+					slidesPerView:2,
+					spaceBetween:30
+				},
+				600: {
+					slidesPerView:1,
+					spaceBetween:20
+				}
+			}
+		})
+	</script>
 </body>
 			<!-- Short story monologue -->
 		<!-- Do you know the difference between a police officer and a civilian? -->
